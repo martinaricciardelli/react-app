@@ -1,4 +1,17 @@
-import logo from './logo.svg';
+import Nav from "./components/NavBar"
+
+const App = () => 
+      <header>
+        <h1>Hola Mundo</h1>
+        <Nav/>
+          <p>Soy un párrafo</p>
+       </header> 
+      
+
+export default App;
+
+
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,4 +35,5 @@ function App() {
   );
 }
 
-export default App;
+
+ */
