@@ -1,12 +1,16 @@
 import Nav from "./components/NavBar"
+import "./components/estilos/Card.css"
 
-const App = () => 
+const App = () => {
+    return (
+    <>
       <header>
-        <h1>Hola Mundo</h1>
+        <h1 className="logo">Helados Vanilla JS </h1>
         <Nav/>
-          <p>Soy un párrafo</p>
-       </header> 
-      
+      </header> 
+    </>
+    )
+}
 
 export default App;
 
