@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from "./CartWidget"
 import './estilos/Card.css'
 
 const Nav = () => {
@@ -8,6 +9,7 @@ const Nav = () => {
             <a className="link" href="#">Menú</a>
             <a className="link" href="#">Preguntas Frecuentes</a>
             <a className="link" href="#">Contacto</a>
+            <CartWidget/>
         </nav>
       
     )

@@ -1,14 +1,13 @@
-import Nav from "./components/NavBar"
+import Header from "./components/Header"
 import "./components/estilos/Card.css"
+import ItemListContainer from "./components/ItemListContainer" 
 
 const App = () => {
     return (
-    <>
-      <header>
-        <h1 className="logo">Helados Vanilla JS </h1>
-        <Nav/>
-      </header> 
-    </>
+      <>
+        <Header titulo= "Helados Vanilla JS"/>
+        <ItemListContainer mensaje="¡Bienvenidx a Helados Vanilla JS!" />
+      </>
     )
 }
 
