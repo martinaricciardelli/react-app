@@ -1,11 +1,14 @@
-import Header from "./components/Header"
+import { useState } from "react"
 import "./components/estilos/Card.css"
-import ItemListContainer from "./components/ItemListContainer" 
+import ItemListContainer from "./components/ItemListContainer"
+import NavBar from "./components/NavBar"
 
 const App = () => {
+
+
     return (
       <>
-        <Header titulo= "Helados Vanilla JS"/>
+        <NavBar/>
         <ItemListContainer mensaje="¡Bienvenidx a Helados Vanilla JS!" />
       </>
     )

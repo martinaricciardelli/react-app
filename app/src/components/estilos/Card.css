@@ -1,34 +1,29 @@
-.logo {
+.navbar-brand {
     font-family: 'Kaushan Script', cursive;
     letter-spacing: 0.5px;
-    font-size: 30pt;
+    font-size: 20pt;
 }
 
-.menu {
-    background-color: #f754cb;
-    height: 50px;
-    width: 100%;
-    border-radius: 15px;
-    padding-top: 20px;
-
-}
-
-.link {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14pt;
-    padding-left: 220px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    letter-spacing: 0.5px;
+.navbar {
+    background-color: #f754cb; 
  
-    
 }
+
+.nav-item {
+    color: white
+}
+
+
 
 .material-icons {
     text-decoration: none;
     color: white;
     padding-left: 150px;
+}
+
+.number {
+    font-size: 16pt;
+    color: white;
 }
 
 .mensaje {
@@ -37,4 +32,21 @@
     margin-top: 50px;
     font-weight: bolder;
     font-size: 20pt;
+}
+
+
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 20pt;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#btn-agregar {
+    width: 50%;
+    height: 40px;
+    font-size: 10pt;
+    margin-left: 15px;
 }
