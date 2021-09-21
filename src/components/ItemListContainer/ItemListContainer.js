@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import '../estilos/Card.css'
 import ItemList from '../ItemList/ItemList'
 
+
 const productos = () =>([
     {id:1, titulo:"Chocolate JSX", precio:"$200", stock: 20},
     {id:2, titulo:"Tramontana jQuery", precio:"$250", stock: 10},
@@ -32,6 +33,7 @@ const [productosIniciales, setProductosIniciales] = useState([])
         return (
             <>
                 <ItemList productos={productosIniciales}/>
+                
             </>
         )
 }

@@ -1,4 +1,6 @@
 import '../estilos/Card.css'
+import ItemCount from '../ItemCount/ItemCount'
+
 
 const Item = (producto) => {
     return (
@@ -7,9 +9,9 @@ const Item = (producto) => {
                 <img src="https://recetastips.com/wp-content/uploads/2020/05/helado-de-chocolate-6-1.jpg" class="card-img-top" alt="..."/>
                  <div class="card-body">
                     <h5 class="card-title">{producto.titulo}</h5>
-                    <p class="card-text">{producto.precio}</p>
-                    
+                    <p class="card-text">{producto.precio}</p> 
                 </div>
+            <ItemCount stock={10} initial={1} onAdd={()=>{}}/>
         </div>
        </div>
     )
