@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './estilos/Card.css'
+import '../estilos/Card.css'
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const  [contador, setContador] = useState(initial)

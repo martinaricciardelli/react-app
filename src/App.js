@@ -1,7 +1,8 @@
-import { useState } from "react"
 import "./components/estilos/Card.css"
-import ItemListContainer from "./components/ItemListContainer"
-import NavBar from "./components/NavBar"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import NavBar from "./components/NavBar/NavBar"
+//import ItemCount from "./components/ItemCount/ItemCount"
+
 
 const App = () => {
 
@@ -9,7 +10,10 @@ const App = () => {
     return (
       <>
         <NavBar/>
-        <ItemListContainer mensaje="¡Bienvenidx a Helados Vanilla JS!" />
+        <p className="mensaje">"¡Bienvenidx a Helados Vanilla JS!"</p>
+        
+        {/*<ItemCount stock={10} initial={1} onAdd={()=>{}}/>*/}
+        <ItemListContainer/>       
       </>
     )
 }

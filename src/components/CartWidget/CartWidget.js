@@ -1,5 +1,5 @@
 import React from 'react'
-import './estilos/Card.css'
+import '../estilos/Card.css'
 
 const CartWidget = () => {
     return (
