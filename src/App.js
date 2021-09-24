@@ -1,6 +1,8 @@
 import "./components/estilos/Card.css"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import NavBar from "./components/NavBar/NavBar"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+import CartWidget from "./components/CartWidget/CartWidget"
 //import ItemCount from "./components/ItemCount/ItemCount"
 
 
@@ -9,11 +11,17 @@ const App = () => {
 
     return (
       <>
-        <NavBar/>
-        <p className="mensaje">"¡Bienvenidx a Helados Vanilla JS!"</p>
-        
-        {/*<ItemCount stock={10} initial={1} onAdd={()=>{}}/>*/}
-        <ItemListContainer/>       
+      <BrowserRouter>
+          <NavBar/>
+          <p className="mensaje">"¡Bienvenidx a Helados Vanilla JS!"</p>
+          {/*<ItemCount stock={10} initial={1} onAdd={()=>{}}/>*/}
+          <ItemListContainer/>   
+          <Switch>
+            <Route path="/" component={ItemListContainer}/>
+            <Route path="/seccion/:id" component={ItemListContainer}/>
+            <Route path="/cart" component={CartWidget}/>
+          </Switch>
+      </BrowserRouter>    
       </>
     )
 }
