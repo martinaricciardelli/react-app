@@ -10,9 +10,10 @@ const Item = ({producto}) => {
                  <div class="card-body">
                     <h5 class="card-title">{producto.titulo}</h5>
                     <p class="card-text">{producto.precio}</p> 
-                    <p class="card-text">Stock disponible:{producto.stock}</p>
+                    <p class="card-text">Stock disponible: {producto.stock}</p>
+                    <ItemCount stock={10} initial={1} onAdd={()=>{}}/>
                 </div>
-            <ItemCount stock={10} initial={1} onAdd={()=>{}}/>
+            
         </div>
        </div>
     )

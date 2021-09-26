@@ -3,6 +3,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import NavBar from "./components/NavBar/NavBar"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import CartWidget from "./components/CartWidget/CartWidget"
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 //import ItemCount from "./components/ItemCount/ItemCount"
 
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/seccion/:id" component={ItemListContainer}/>
             <Route path="/cart" component={CartWidget}/>
           </Switch>
+          <ItemDetailContainer/>
       </BrowserRouter>    
       </>
     )
