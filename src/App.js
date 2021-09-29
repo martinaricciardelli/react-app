@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import CartWidget from "./components/CartWidget/CartWidget"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
+import React from "react"
 //import ItemCount from "./components/ItemCount/ItemCount"
 
 
@@ -13,16 +14,13 @@ const App = () => {
     return (
       <>
       <BrowserRouter>
-          <NavBar/>
-          <p className="mensaje">"¡Bienvenidx a Helados Vanilla JS!"</p>
-          {/*<ItemCount stock={10} initial={1} onAdd={()=>{}}/>*/}
-          <ItemListContainer/>   
+          <NavBar/>   
           <Switch>
-            <Route path="/" component={ItemListContainer}/>
-            <Route path="/seccion/:id" component={ItemListContainer}/>
+            <Route exact path="/" component={ItemListContainer}/>
+            <Route path="/category/:id" component={ItemListContainer}/>
+            <Route path="/item/:id" component={ItemDetailContainer}/>
             <Route path="/cart" component={CartWidget}/>
           </Switch>
-          <ItemDetailContainer/>
       </BrowserRouter>    
       </>
     )

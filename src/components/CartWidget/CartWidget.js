@@ -9,7 +9,7 @@ const CartWidget = () => {
             <Link to="/cart" class="material-icons">shopping_cart</Link>
             <span className="number">0</span>
         </div>
-        <p>soy el carrito</p>
+        
         </>
     )
 }

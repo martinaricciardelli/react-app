@@ -1,20 +1,23 @@
+import { Link } from 'react-router-dom'
 import '../estilos/Card.css'
-import ItemCount from '../ItemCount/ItemCount'
+import ItemList from '../ItemList/ItemList'
 
 
 const Item = ({producto}) => {
     return (
         <div>
-             <div class="card mt-5 ms-5" style={{width: "18rem"}}>
+            <div className="card-container">
+             <div className="card mt-5 ms-5" style={{width: "18rem"}}>
                 <img src={producto.img} class="card-img-top" alt="..."/>
-                 <div class="card-body">
-                    <h5 class="card-title">{producto.titulo}</h5>
-                    <p class="card-text">{producto.precio}</p> 
-                    <p class="card-text">Stock disponible: {producto.stock}</p>
-                    <ItemCount stock={10} initial={1} onAdd={()=>{}}/>
+                 <div className="card-body">
+                    <h5 className="card-title">{producto.titulo}</h5>
+                    <p className="card-text">Stock disponible: {producto.stock}</p>
+                    <Link to={`/item/${producto.id}`}>Ver detalles</Link>
+                    
                 </div>
+             </div>
+            </div>
             
-        </div>
        </div>
     )
 }

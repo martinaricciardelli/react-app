@@ -1,4 +1,6 @@
 import "../estilos/Card.css"
+import "../ItemCount/ItemCount"
+import ItemCount from "../ItemCount/ItemCount"
 
 const ItemDetail = ({producto}) => {
 
@@ -10,7 +12,7 @@ const ItemDetail = ({producto}) => {
                         <h5 class="card-title">{producto.titulo}</h5>
                         <p class="card-text">{producto.descripcion}</p> 
                         <p class="card-text">{producto.precio}</p>
-                        <button id="btn-agregar" class="btn btn-primary mt-3" onClick={() => {alert('Compra realizada con éxito!')}}>Comprar</button>
+                        <ItemCount stock={10} initial={1} onAdd={()=>{}}/>                 
                     </div>
                 
             </div>
